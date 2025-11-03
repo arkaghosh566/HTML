@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Tags Reference with Examples</title>
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background: #f8fafc;
+        color: #222;
+        margin: 0;
+        padding: 2rem;
+        line-height: 1.6;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+      section {
+        background: white;
+        border-radius: 12px;
+        padding: 1.5rem;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
+      }
+      .tag-name {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #1e3a8a;
+      }
+      pre {
+        background: #f1f5f9;
+        border-left: 4px solid #3b82f6;
+        padding: 1rem;
+        overflow-x: auto;
+        border-radius: 6px;
+      }
+      .example {
+        background: #f9fafb;
+        padding: 1rem;
+        border-radius: 8px;
+        border: 1px solid #e2e8f0;
+        margin-top: 0.5rem;
+      }
+      hr {
+        margin: 2rem 0;
+        border: none;
+        border-top: 2px solid #e5e7eb;
+      }
+      code {
+        background: #e2e8f0;
+        padding: 2px 5px;
+        border-radius: 4px;
+        font-family: monospace;
+      }
+      footer {
+        text-align: center;
+        font-size: 0.9rem;
+        color: #555;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid #ccc;
+        border-collapse: collapse;
+        padding: 4px 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>📚 Complete HTML Tags Reference & Live Demonstration</h1>
+
+    <!-- 🧱 BASIC STRUCTURE -->
+    <section>
+      <div class="tag-name">🧱 Basic Structure Tags</div>
+      <p>
+        <b>&lt;!DOCTYPE html&gt;</b> — Declares document type and HTML version.
+      </p>
+      <pre><code>&lt;!DOCTYPE html&gt;</code></pre>
+      <div class="example">No visible effect — defines HTML5 mode.</div>
+
+      <p><b>&lt;html&gt;</b> — Root element of the document.</p>
+      <pre><code>&lt;html lang="en"&gt;...&lt;/html&gt;</code></pre>
+
+      <p><b>&lt;head&gt;</b> — Contains metadata and links.</p>
+      <pre><code>&lt;head&gt; &lt;title&gt;Example&lt;/title&gt; &lt;/head&gt;</code></pre>
+
+      <p><b>&lt;body&gt;</b> — Holds all visible content.</p>
+      <pre><code>&lt;body&gt;Visible content here&lt;/body&gt;</code></pre>
+    </section>
+
+    <hr />
+
+    <!-- 🧭 METADATA -->
+    <section>
+      <div class="tag-name">🧭 Metadata & Head Elements</div>
+      <p><b>&lt;title&gt;</b> — Sets the browser tab title.</p>
+      <pre><code>&lt;title&gt;My Page&lt;/title&gt;</code></pre>
+
+      <p><b>&lt;meta&gt;</b> — Provides document metadata.</p>
+      <pre><code>&lt;meta name="description" content="HTML Reference Page"&gt;</code></pre>
+
+      <p><b>&lt;link&gt;</b> — Links external stylesheets.</p>
+      <pre><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
+
+      <p><b>&lt;style&gt;</b> — Internal CSS styling.</p>
+      <pre><code>&lt;style&gt; body { background: lightblue; } &lt;/style&gt;</code></pre>
+      <div class="example" style="background: lightblue">
+        This box shows internal CSS styling.
+      </div>
+
+      <p><b>&lt;script&gt;</b> — Embeds JavaScript code.</p>
+      <pre><code>&lt;script&gt;alert("Hello World!")&lt;/script&gt;</code></pre>
+
+      <p><b>&lt;base&gt;</b> — Defines base URL for relative paths.</p>
+      <pre><code>&lt;base href="https://example.com/"&gt;</code></pre>
+    </section>
+
+    <hr />
+
+    <!-- 📄 TEXT -->
+    <section>
+      <div class="tag-name">📄 Text Content & Formatting</div>
+
+      <p><b>Headings:</b></p>
+      <pre><code>&lt;h1&gt;Main&lt;/h1&gt; ... &lt;h6&gt;Smallest&lt;/h6&gt;</code></pre>
+      <div class="example">
+        <h1>Heading 1</h1>
+        <h3>Heading 3</h3>
+        <h6>Heading 6</h6>
+      </div>
+
+      <p><b>&lt;p&gt;</b> — Paragraph of text.</p>
+      <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+      <div class="example"><p>This is a paragraph.</p></div>
+
+      <p><b>&lt;br&gt;</b> — Line break.</p>
+      <pre><code>First line&lt;br&gt;Second line</code></pre>
+      <div class="example">First line<br />Second line</div>
+
+      <p><b>&lt;hr&gt;</b> — Horizontal divider.</p>
+      <pre><code>&lt;hr&gt;</code></pre>
+      <div class="example"><hr /></div>
+
+      <p><b>&lt;blockquote&gt;</b> — Long quotation.</p>
+      <pre><code>&lt;blockquote&gt;“The future belongs to those who code.”&lt;/blockquote&gt;</code></pre>
+      <div class="example">
+        <blockquote>“The future belongs to those who code.”</blockquote>
+      </div>
+
+      <p><b>&lt;q&gt;</b> — Inline quote.</p>
+      <pre><code>&lt;q&gt;Be yourself.&lt;/q&gt;</code></pre>
+      <div class="example"><q>Be yourself.</q></div>
+
+      <p><b>&lt;abbr&gt;</b> — Abbreviation with tooltip.</p>
+      <pre><code>&lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;</code></pre>
+      <div class="example">
+        <abbr title="HyperText Markup Language">HTML</abbr>
+      </div>
+
+      <p><b>&lt;address&gt;</b> — Contact information.</p>
+      <pre><code>&lt;address&gt;123 Web Street, Internet City&lt;/address&gt;</code></pre>
+      <div class="example">
+        <address>123 Web Street, Internet City</address>
+      </div>
+
+      <p><b>&lt;cite&gt;</b> — Citation for work.</p>
+      <pre><code>&lt;cite&gt;HTML5 Specification&lt;/cite&gt;</code></pre>
+      <div class="example"><cite>HTML5 Specification</cite></div>
+
+      <p><b>&lt;mark&gt;</b> — Highlighted text.</p>
+      <pre><code>&lt;mark&gt;important&lt;/mark&gt;</code></pre>
+      <div class="example">This is <mark>important</mark> text.</div>
+
+      <p>
+        <b>&lt;del&gt;</b> &amp; <b>&lt;ins&gt;</b> — Deleted/Inserted text.
+      </p>
+      <pre><code>&lt;del&gt;Old&lt;/del&gt; &lt;ins&gt;New&lt;/ins&gt;</code></pre>
+      <div class="example"><del>Old</del> <ins>New</ins></div>
+
+      <p>
+        <b>&lt;sub&gt;</b> &amp; <b>&lt;sup&gt;</b> — Subscript/Superscript.
+      </p>
+      <pre><code>H&lt;sub&gt;2&lt;/sub&gt;O and x&lt;sup&gt;2&lt;/sup&gt;</code></pre>
+      <div class="example">H<sub>2</sub>O and x<sup>2</sup></div>
+
+      <p>
+        <b>&lt;u&gt;</b>, <b>&lt;em&gt;</b>, <b>&lt;strong&gt;</b>,
+        <b>&lt;small&gt;</b>
+      </p>
+      <pre><code>&lt;u&gt;Underlined&lt;/u&gt; &lt;em&gt;Emphasis&lt;/em&gt; &lt;strong&gt;Strong&lt;/strong&gt; &lt;small&gt;Small&lt;/small&gt;</code></pre>
+      <div class="example">
+        <u>Underlined</u>, <em>Emphasized</em>, <strong>Strong</strong>,
+        <small>Small</small>
+      </div>
+
+      <p><b>&lt;span&gt;</b> — Inline container for styling.</p>
+      <pre><code>&lt;span style="color:red"&gt;Red text&lt;/span&gt;</code></pre>
+      <div class="example"><span style="color: red">Red text</span></div>
+    </section>
+
+    <hr />
+
+    <!-- 🖼️ MEDIA -->
+    <section>
+      <div class="tag-name">🖼️ Multimedia & Graphics</div>
+
+      <p><b>&lt;img&gt;</b> — Embeds an image.</p>
+      <pre><code>&lt;img src="https://via.placeholder.com/120" alt="Sample"&gt;</code></pre>
+      <div class="example">
+        <img src="https://via.placeholder.com/120" alt="Sample" />
+      </div>
+
+      <p><b>&lt;audio&gt;</b> — Embeds audio player.</p>
+      <pre><code>&lt;audio controls&gt;&lt;source src="audio.mp3" type="audio/mpeg"&gt;&lt;/audio&gt;</code></pre>
+      <div class="example">
+        <audio controls>
+          <source
+            src="https://interactive-examples.mdn.mozilla.net/media/examples/t-rex-roar.mp3"
+            type="audio/mpeg"
+          />
+        </audio>
+      </div>
+
+      <p><b>&lt;video&gt;</b> — Embeds a video.</p>
+      <pre><code>&lt;video controls width="250"&gt;&lt;source src="video.mp4" type="video/mp4"&gt;&lt;/video&gt;</code></pre>
+      <div class="example">
+        <video controls width="250">
+          <source
+            src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+
+      <p><b>&lt;canvas&gt;</b> — Draws graphics via JS.</p>
+      <pre><code>&lt;canvas id="myCanvas" width="200" height="100"&gt;&lt;/canvas&gt;</code></pre>
+      <div class="example">
+        <canvas
+          id="myCanvas"
+          width="200"
+          height="100"
+          style="border: 1px solid #aaa"
+        ></canvas>
+      </div>
+
+      <script>
+        const c = document.getElementById("myCanvas");
+        const ctx = c.getContext("2d");
+        ctx.fillStyle = "#60a5fa";
+        ctx.fillRect(30, 30, 140, 40);
+        ctx.fillStyle = "white";
+        ctx.font = "14px Segoe UI";
+        ctx.fillText("Canvas Box", 60, 55);
+      </script>
+
+      <p><b>&lt;svg&gt;</b> — Vector graphics.</p>
+      <pre><code>&lt;svg width="100" height="100"&gt;&lt;circle cx="50" cy="50" r="40" fill="lightblue" stroke="blue"&gt;&lt;/circle&gt;&lt;/svg&gt;</code></pre>
+      <div class="example">
+        <svg width="100" height="100">
+          <circle
+            cx="50"
+            cy="50"
+            r="40"
+            fill="lightblue"
+            stroke="blue"
+          ></circle>
+        </svg>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- 🔗 LINKS -->
+    <section>
+      <div class="tag-name">🔗 Links & Navigation</div>
+      <p><b>&lt;a&gt;</b> — Hyperlink to other pages.</p>
+      <pre><code>&lt;a href="https://example.com" target="_blank"&gt;Visit Site&lt;/a&gt;</code></pre>
+      <div class="example">
+        <a href="https://example.com" target="_blank">Visit Site</a>
+      </div>
+
+      <p><b>&lt;nav&gt;</b> — Navigation menu.</p>
+      <pre><code>&lt;nav&gt;&lt;a href="#"&gt;Home&lt;/a&gt; | &lt;a href="#"&gt;About&lt;/a&gt;&lt;/nav&gt;</code></pre>
+      <div class="example">
+        <nav><a href="#">Home</a> | <a href="#">About</a></nav>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- 🧮 LISTS -->
+    <section>
+      <div class="tag-name">🧮 Lists</div>
+      <p><b>&lt;ul&gt;</b> — Unordered list.</p>
+      <pre><code>&lt;ul&gt;&lt;li&gt;Apple&lt;/li&gt;&lt;li&gt;Banana&lt;/li&gt;&lt;/ul&gt;</code></pre>
+      <div class="example">
+        <ul>
+          <li>Apple</li>
+          <li>Banana</li>
+        </ul>
+      </div>
+
+      <p><b>&lt;ol&gt;</b> — Ordered list.</p>
+      <pre><code>&lt;ol&gt;&lt;li&gt;Step 1&lt;/li&gt;&lt;li&gt;Step 2&lt;/li&gt;&lt;/ol&gt;</code></pre>
+      <div class="example">
+        <ol>
+          <li>Step 1</li>
+          <li>Step 2</li>
+        </ol>
+      </div>
+
+      <p>
+        <b>&lt;dl&gt;</b>, <b>&lt;dt&gt;</b>, <b>&lt;dd&gt;</b> — Description
+        list.
+      </p>
+      <pre><code>&lt;dl&gt;&lt;dt&gt;HTML&lt;/dt&gt;&lt;dd&gt;Markup Language&lt;/dd&gt;&lt;/dl&gt;</code></pre>
+      <div class="example">
+        <dl>
+          <dt>HTML</dt>
+          <dd>Markup Language</dd>
+          <dt>CSS</dt>
+          <dd>Styling</dd>
+        </dl>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- 📊 TABLES -->
+    <section>
+      <div class="tag-name">📊 Tables</div>
+      <p><b>&lt;table&gt;</b> — Displays tabular data.</p>
+      <pre><code>&lt;table&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Age&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Alice&lt;/td&gt;&lt;td&gt;22&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code></pre>
+      <div class="example">
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+          </tr>
+          <tr>
+            <td>Alice</td>
+            <td>22</td>
+          </tr>
+          <tr>
+            <td>Bob</td>
+            <td>25</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <footer>
+      🧠 End of HTML Reference — built for learning with live examples.
+    </footer>
+  </body>
+</html>
